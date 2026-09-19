@@ -4,7 +4,7 @@ from Documento import Documento
 from cola import cola
 
 
-# ---------- VARIABLES ----------
+# variables
 
 cola = cola()
 
@@ -15,7 +15,7 @@ documento_actual = None
 pagina_actual = 0
 
 
-# ---------- FUNCIONES ----------
+# funciones 
 
 def agregar_documento():
 
@@ -162,7 +162,7 @@ def detener_impresion():
     )
 
 
-# ---------- VENTANA ----------
+#Ventana
 
 ventana = tk.Tk()
 
@@ -173,7 +173,7 @@ ventana.geometry("600x650")
 ventana.configure(bg="plum1")
 
 
-# ---------- TÍTULO ----------
+#titulo
 
 titulo = tk.Label(
     ventana,
@@ -185,7 +185,7 @@ titulo = tk.Label(
 titulo.place(x=160, y=20)
 
 
-# ---------- NUEVO DOCUMENTO ----------
+# documento nuevo
 
 frame1 = tk.LabelFrame(
     ventana,
@@ -270,7 +270,7 @@ boton_agregar = tk.Button(
 boton_agregar.place(x=180, y=140)
 
 
-# ---------- COLA DE IMPRESIÓN ----------
+# cola
 
 frame2 = tk.LabelFrame(
     ventana,
@@ -294,7 +294,7 @@ texto_cola = tk.Text(
 texto_cola.place(x=10, y=5)
 
 
-# ---------- ÁREA DE IMPRESIÓN ----------
+# área de impresión 
 
 frame3 = tk.LabelFrame(
     ventana,
@@ -318,7 +318,7 @@ texto_impresion = tk.Text(
 texto_impresion.place(x=10, y=5)
 
 
-# ---------- ESTADO ----------
+# estadl
 
 etiqueta_estado = tk.Label(
     ventana,
@@ -330,7 +330,7 @@ etiqueta_estado = tk.Label(
 etiqueta_estado.place(x=170, y=540)
 
 
-# ---------- BOTÓN INICIAR ----------
+# botón inicio
 
 boton_iniciar = tk.Button(
     ventana,
@@ -341,7 +341,7 @@ boton_iniciar = tk.Button(
 boton_iniciar.place(x=170, y=580)
 
 
-# ---------- BOTÓN DETENER ----------
+# botón pausa
 
 boton_detener = tk.Button(
     ventana,
